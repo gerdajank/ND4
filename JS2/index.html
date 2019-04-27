@@ -17,10 +17,18 @@
         
     artLen = article.length;
     headerLen = title.length;
+        
+    function rasyk() {
+        document.write ("<h1>", title.fontsize(18).fontcolor(colorTitle), "</h1>" );
+        document.write ("<p>", article.fontcolor(colorParagraph), "</p>");
+        document.write ("<p> Tekste  (įskaitant ir header tekstą) yra ",artLen+headerLen ," simbolių </p>");
+            }
+        
+    rasyk();
     
-    document.write ("<h1>", title.fontsize(18).fontcolor(colorTitle), "</h1>" );
-    document.write ("<p>", article.fontcolor(colorParagraph), "</p>");
-    document.write ("<p> Tekste  (įskaitant ir header tekstą) yra ",artLen+headerLen ," simbolių </p>");
+    //document.write ("<h1>", title.fontsize(18).fontcolor(colorTitle), "</h1>" );
+    //document.write ("<p>", article.fontcolor(colorParagraph), "</p>");
+    //document.write ("<p> Tekste  (įskaitant ir header tekstą) yra ",artLen+headerLen ," simbolių </p>");
         
     </script>
 </body>
