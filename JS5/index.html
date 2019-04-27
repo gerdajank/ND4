@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Dalinti</h1>
+
+<p id="demo"></p>
+    
+<script>
+
+var dalybosAtsakymas;
+var skaiciusX;
+var skaiciusY;
+    
+skaiciusX = prompt("Iveskite X");
+skaiciusY = prompt("Iveskite Y");
+    
+    
+ function dalyba(x,y) {
+    var res = x/y; 
+    document.getElementById("demo").innerHTML = res;
+    console.log(res);
+    return(res);
+}
+    dalybosAtsakymas = dalyba(skaiciusX, skaiciusY);
+    alert("X ir Y dalybos atsakymas " + dalybosAtsakymas);
+    
+
+</script>
+
+</body>
+</html>
