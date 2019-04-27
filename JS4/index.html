@@ -8,12 +8,16 @@
 
     
 <script>
+var dalybosAtsakymas;
     
-function dalyba(x,y) {
+ function dalyba(x,y) {
     var res = x/y; 
     document.getElementById("demo").innerHTML = res;
-    console.log(res);  
+    console.log(res);
+    return(res);
 }
+    dalybosAtsakymas = dalyba(4,3)
+    alert(dalybosAtsakymas);
 
 </script>
 
