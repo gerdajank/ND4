@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script scr="https://code.jquery.com/jquery-3.4.0.min.js"
+            type ="text/javascript"></script>
+</head>
+
+<body>
+    
+    <h1> Prekes aprašymas</h1>
+    <p id = "cars">  </p>
+
+    
+   
+<!--
+    <select>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="volkswagen">Volkswagen</option>
+        <option value="audi">Audi</option>
+    </select> 
+-->
+    
+
+    <script>
+     var aprasymas = {
+         title: "Pavadinimas",
+         deccription: "Komplektacija",
+         discount: "nuolaida",
+         isItNew: "nauja",
+         color : "spalva",
+         price: "kaina",
+         currency: "valiuta"
+     };
+        
+        
+    var preke = {
+    title: "Nešiojamas kompiuteris",
+    description: "NVIDIA GeForce GTX 1070 grafinis adapteris su Max-Q4 technologija, Intel Core 8th Generation procesorius ir pažangi aušinimo sistema suteikia reikiamą galią, nesvarbu, kur būtumėte.",
+    discount: 30,
+    isItNew: true,
+    color: 0,
+    price: 699.00,
+    currency: "EUR"
+    };
+        
+    var out = " ";
+   
+   // function spalva(reiksme)
+    //    {if reiksme == 0 {} }
+        
+   function printObject(obj§) {
+       for (var i in obj) {
+           out += i + ': ' + obj[i] + '\n';
+                        }
+       alert(out);
+      
+       return(out);
+   }
+        
+         
+    //document.write(printObject(preke));
+         
+        
+   
+  document.getElementById("cars").innerHTML = printObject(preke);
+       
+   
+//document.getElementById("cars").addEventListener("change", displayCar);
+       
+
+   // function displayCar() 
+    //{
+    //  var selected_value = document.getElementById("cars").value;
+      //alert(selected_value);
+//    }
+        
+        
+// Pagal duotą objektą, naudodami document.write turite sugeneruoti prekės aprašymą //elektroninei parduotuvei. (pvz (tik kaip pvz) cia: https://i.stack.imgur.com/GiIsV.jpg )
+//Padarykite, kad spalva būtų pasirenkama ( <select> ).
+//color - savybės reikšmės (0 - "juoda", 1 - "raudona", 2 - "žalia", 3 - "sidabrinė");
+//isItNew - sąvybės reikšmė true, tai tekstas turi būti žalias, kitu atveju juodas.       
+        
+    //rasyk();
+    
+    //document.write ("<h1>", title.fontsize(18).fontcolor(colorTitle), "</h1>" );
+    //document.write ("<p>", article.fontcolor(colorParagraph), "</p>");
+    //document.write ("<p> Tekste  (įskaitant ir header tekstą) yra ",artLen+headerLen ," simbolių </p>");
+        
+
+
+
+        
+    </script>
+</body>
+    
+</html>
