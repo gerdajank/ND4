@@ -16,7 +16,7 @@
     
     <p> Vidutinės temperatūros skaičiavimas</p>
     <?php  
-        for($i=0; $i < count($temp); $i++){
+        for($i=0; $i <= count($temp); $i++){
         $suma = $suma + $temp[$i];
     } 
      echo "Vidutine temperatura:". round($suma/count($temp))."</li>";
