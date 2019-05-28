@@ -1,0 +1,419 @@
+/* form */
+.open-button {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 70px;
+    border-radius: 30px;
+}
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+.form-container {
+  max-width: 1000px;
+  padding: 10px;
+  background-color: white;
+}
+
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 2px 2px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.form-container .cancel {
+  background-color: red;
+}
+
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+body {
+   display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+   /* padding: 5px;*/
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/*banner and empty container in banner */
+.banner {
+    background-image: url("../images/MTM.jpg");
+    background-repeat: no-repeat;
+	/*background-size: cover; */
+    background-size: 100% 80%;
+    background-attachment: fixed;
+    background-position: -20% 20%;
+	}
+
+.emptycontainer {
+    width: 954px;
+    margin: 0px auto;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* top container index.php*/
+.containertop {
+  position: relative;
+  width: 100%;
+}
+
+/*.imagetop {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}*/
+
+.middletop {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*.containertop:hover .font {
+  color: white;
+} */
+
+.containertop:hover .middletop {
+  opacity: 1;
+}
+
+.texttop {
+  /*background-color: #4CAF50; */
+  color: black;
+  font-size: 20px;
+  padding: 16px 32px;
+}
+
+.myBoxtop:hover {
+   background-color: white; 
+    cursor: hand;
+    cursor: pointer;
+    opacity: 0.9;
+    color: white;
+}
+
+/*a {
+  opacity: opacity .2s ease-out,color .2s ease-out,background .2s ease-in;  
+}*/
+
+a:hover { 
+  background-color: #c2c2c2;
+}
+
+/*a:visited {
+  color: indianred;
+}*/
+
+.font {
+   font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.myBox:hover {
+   background-color: #c2c2c2; 
+    cursor: hand;
+    cursor: pointer;
+    opacity: .9;
+}
+
+.myBox {
+    background: #eee;
+    color: black;
+}
+
+.opacity-nav{
+    opacity: 0.7;
+}
+
+nav .brand-logo {
+     font-size: 20px;
+}
+
+@media only screen and (max-width : 900px) {
+    nav .brand-logo {
+   /* position: relative;
+    display: block;
+    text-align: center;*/
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width : 576px) {
+    nav .brand-logo {
+        font-size: 8px;
+    }
+}
+
+
+main {
+    flex: 1 0 auto;
+   /* width: 80%; */
+   /* margin: 30px auto;*/
+}
+
+
+.white {
+	/*background-color: white!important; */
+    color: black!important;
+}
+
+nav ul li a{
+  color: black;
+}  
+
+h4 {
+    padding: 0 20px;
+}
+
+a.fixed {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 260px;
+    border: 3px solid #73AD21;
+}
+
+.container {
+    width:100%; 
+   /* height: 100%;*/
+    text-align: justify;
+    margin: 5px;
+    padding: 40px 150px;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+.containerf {
+    width:100%; 
+   /* height: 100%;*/
+    text-align: justify;
+    margin: 5px;
+    padding:20px 150px;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.eilute {
+    display: flex;
+    flex-wrap: wrap;
+    /*overflow-x: auto; */
+    /*flex-direction: row;*/
+}
+
+.stulpelis {
+    color: #8c8c8c;
+    display: flex;
+    flex: 50%;
+    /*max-width: 28%;*/
+    flex-direction: column;
+    border: 1px solid #d9d9d9;
+    box-shadow: 3px 2px #d9d9d9;
+}
+
+.stulpelis1 {
+    color: #8c8c8c;
+    display: flex;
+    flex: 60%;
+    flex-direction: column;
+    /*border: 1px solid #d9d9d9; */
+   /* box-shadow: 3px 2px #d9d9d9;*/
+    margin: 10px;
+    /*flex-wrap: wrap;*/
+}
+
+.stulpelis2 {
+    color: #8c8c8c;
+    display: flex;
+    flex: 25%;
+    flex-direction: column;
+   /* border: 1px solid #d9d9d9;*/
+    /*box-shadow: 3px 2px #d9d9d9;*/
+    margin: 10px;
+}
+
+.stulpelisSeminarai {
+    color: #8c8c8c;
+    display: flex;
+    flex: 25%;
+    flex-direction: column;
+    /*border: 1px solid #d9d9d9;*/
+    /*box-shadow: 3px 2px #d9d9d9;*/
+    margin: 10px;
+}
+
+.stulpelisApie {
+    color: #8c8c8c;
+    display: flex;
+    flex: 20%;
+    /*max-width: 28%;*/
+    flex-direction: column;
+    border: 1px solid #d9d9d9;
+    box-shadow: 3px 2px #d9d9d9;
+}
+
+.seminaras{
+     display: flex;
+     flex-direction: column;
+      overflow: auto;
+}
+
+.pavadinimas {
+    font-size: 20px;
+    margin: 10px 0px;
+    padding: 0 10px;
+}
+
+/*seminaro pavadinimas*/
+.pavadinimass {   
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+.pavarde {
+    font-size: 18px;
+    /*margin: 5px 5px;*/
+    padding: 0 5px;
+    color: #2196f3;
+}
+
+.aprasymas {
+   /* font-size: 12px;*/
+    padding: 20px 10px;
+    text-align: justify;
+    padding-bottom: 100px;
+}
+
+.data{
+    margin: 5px 5px;
+    font-size:12px;
+}
+
+.stulpelis img {
+  /*  margin-top: 8px; */
+   /* vertical-align: middle;*/
+    width: 100%;
+    height: 200px;
+  /*  padding: 1px; */
+   /* object-fit: contain;*/
+}
+
+.nuotrauka {
+  /*height:150px;*/
+  overflow-y: hidden;
+}
+
+
+/*FB galerija*/
+.eilutefb {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.stulpelisfb {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.stulpelisfb .nuotraukafb img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.nuotraukafb {
+  height:180px;
+  overflow-y: hidden;
+}
+
+
+.stulpelisApie .nuotrauka img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 150px;
+} 
+
+@media screen and (max-width: 768px) {
+  .stulpelisfb, .stulpelisApie, .stulpelis {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+    .container {
+        padding: 0 5px;
+    }
+    .antraste {
+        size: 12px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+  .stulpelisfb, .stulpelisApie, .stulpelis  {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+    .container {
+        padding: 0 20px;
+    }
+}
+
+@-webkit-keyframes round {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+
+
+@media screen and (max-width: 768px){
+    .eilute {
+        flex-direction: column;
+    }
+    .stulpelis {
+        flex: 100%;
+       max-width: 100%;
+    }
+}
+
+      
